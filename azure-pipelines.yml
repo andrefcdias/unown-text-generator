@@ -18,19 +18,11 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install -g yarn
-    yarn
+    yarn --production
     ng build --prod
     pwd
     ls $(Build.BinariesDirectory)
   displayName: 'Build and package'
-    
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)/dist/unown-text-generator/'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
     
 - task: PublishBuildArtifacts@1
   inputs:
