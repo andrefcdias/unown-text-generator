@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput type="text" placeholder="Text to convert" formControlName="text" required>
+        <mat-error *ngIf="form.controls.text.errors?.required">Letters are required for conversion</mat-error>
+        <mat-error *ngIf="form.controls.text.errors?.invalidCharacters">Invalid characters used</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="!form.valid">Convert</button>
+</form>
+<app-converter *ngIf="textToConvert" [text]="textToConvert"></app-converter>
