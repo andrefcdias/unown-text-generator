@@ -24,6 +24,11 @@ steps:
     yarn
     ng build --prod
   displayName: 'Package update and app build'
+  
+- script: |
+    pwd
+    ls ..
+  displayName: 'Debug'
     
 - task: ArchiveFiles@2
   inputs:
