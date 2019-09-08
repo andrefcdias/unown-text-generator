@@ -18,20 +18,11 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install -g yarn
-  displayName: 'Dependencies install'
-  
-- script: |
     yarn
     ng build --prod
     pwd
-    ls .
-    ls ..
-  displayName: 'Package update and app build'
-  
-- script: |
-    pwd
-    ls ..
-  displayName: 'Debug'
+    ls $(Build.BinariesDirectory)
+  displayName: 'Build and package'
     
 - task: ArchiveFiles@2
   inputs:
