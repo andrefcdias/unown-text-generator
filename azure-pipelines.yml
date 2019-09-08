@@ -17,6 +17,24 @@ steps:
 
 - script: |
     npm install -g @angular/cli
-    npm install
+    npm install -g yarn
+  displayName: 'Dependencies install'
+  
+- script: |
+    yarn
     ng build --prod
-  displayName: 'npm install and build'
+  displayName: 'Package update and app build'
+    
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.BinariesDirectory)/dist/unown-text-generator/'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+    
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
