@@ -23,6 +23,9 @@ steps:
 - script: |
     yarn
     ng build --prod
+    pwd
+    ls .
+    ls ..
   displayName: 'Package update and app build'
   
 - script: |
