@@ -15,13 +15,13 @@ import { environment } from 'src/environments/environment';
   `]
 })
 export class UnownLetterComponent {
-  @Input() character: String;
+  @Input() character: string;
 
   getUrl(char: string) {
     return `${environment.unownFolder}/${this.convertCharToFilename(char)}.png`
   }
 
-  private convertCharToFilename(char: string) {
+  private convertCharToFilename(char: string): string {
     switch(char)
     {
       case "?":
