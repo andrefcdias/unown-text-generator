@@ -13,7 +13,7 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install -g yarn
-    yarn --production
+    yarn
     ng build --prod
     pwd
     ls $(Build.BinariesDirectory)
