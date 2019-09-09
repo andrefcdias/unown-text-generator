@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConverterComponent } from './converter.component';
+import { ConverterComponent } from "./ConverterComponent";
 
 describe('ConverterComponent', () => {
   let component: ConverterComponent;

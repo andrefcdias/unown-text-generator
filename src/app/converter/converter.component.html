@@ -1,3 +1,4 @@
-<div *ngFor="let char of getChars()">
-    <app-unown-letter [character]="char"></app-unown-letter>
+<div #test class="flex-line">
+    <app-unown-letter *ngFor="let char of getChars()" [character]="char"></app-unown-letter>
 </div>
+<button mat-raised-button color="primary" (click)="export()">Download image</button>

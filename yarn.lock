@@ -903,6 +903,11 @@
     semver "6.3.0"
     semver-intersect "1.4.0"
 
+"@types/downloadjs@1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@types/downloadjs/-/downloadjs-1.4.1.tgz#11a959c5fd09d3f1ca74c02ba17ae8f126ce57fd"
+  integrity sha512-Y7Ds+ne3AMvNY9TB055NCOoFewlmEpRpGGyNaPu1lw6a0reLHWESZ8KLVDBfdOvlwDUBWWQVcijkCJaoysDC4Q==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -2773,6 +2778,11 @@ domain-browser@^1.1.1:
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
   integrity sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==
 
+downloadjs@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/downloadjs/-/downloadjs-1.4.7.tgz#f69f96f940e0d0553dac291139865a3cd0101e3c"
+  integrity sha1-9p+W+UDg0FU9rCkROYZaPNAQHjw=
+
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-3.7.1.tgz#2a4df5317f6ccfd91f86d6fd25d8d8a103b88309"
@@ -3685,6 +3695,11 @@ html-entities@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   integrity sha1-DfKTUfByEWNRXfueVUPl9u7VFi8=
+
+html-to-image@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/html-to-image/-/html-to-image-0.1.1.tgz#0db51267b4bbd1bc682a07d8dae44bc431ec6acd"
+  integrity sha512-UAjpXmokENeOyzfLwL0+zQ502lXyg6pkzVUmRjtljOH9dR/YdEYQhWrQ/O14hmH5/1L7jv1aOupU4Zi3Y8+iow==
 
 http-cache-semantics@^3.8.1:
   version "3.8.1"
